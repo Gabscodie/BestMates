@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BestMate - A world-class pet hotel</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/d05b1652d2.js" crossorigin="anonymous"></script>
+</head>
+</html>
+
+<body>
+    <section class = "booking-header">
+        <nav>
+            <div class="logo">
+                <h1>BESTMATE</h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick = "hideMenu()"></i>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Help/FAQ</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">My Account</a></li>
+                    </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick = "showMenu()"></i>
+        </nav>
+        <div class ="text-box">
+            <h2>BOOKING HERE</h2>
+        </div>
+    </section>
+<!-- Hotel accommodation options -->
+    <section class="hotel">
+        <h1>Our Accommodation Options</h1>
+        <h2>For Our Dog Mates</h2>
+        <div class="row">
+            <div class="hotel-col">
+                <img src="images/normal_lodge.png">
+                <div class="layer">
+                    <h3>THE LODGE</h3>
+                </div>
+                <p><strong>Price: </strong> $45/day</p>
+                <p><strong>Condition: </strong>clean and soft bed</p>
+            </div>
+            <div class="hotel-col">
+                <img src="images/premium_lodge.png">
+                <div class="layer">
+                    <h3>PREMIUM LODGE</h3>
+                </div>
+                <p><strong>Price: </strong> $50/day</p>
+                <p><strong>Condition: </strong>more spatial, and high-quality bed</p>
+            </div>
+            <div class="hotel-col">
+                <img src="images/Delux_lodge.png">
+                <div class="layer">
+                    <h3>SHARED DELUX LODGE</h3>
+                </div>
+                <p><strong>Price: </strong> $65/day</p>
+                <p><strong>Condition: </strong>a spatial and clean outdoor area (canopy inclusive) with high-quality beds, 
+                to be shared with another mate.
+                </p>
+            </div>
+        </div>
+        <h2>For Our Cat Mates</h2>
+        <div class="row">
+            <div class="hotel-col">
+                <img src="images/tree.png">
+                <div class="layer">
+                    <h3>TREE-LIKE APARTMENT</h3>
+                </div>
+                <p><strong>Price: </strong> $35/day</p>
+                <p><strong>Condition: </strong>A tree apartment with 2 floors that is clean and soft.</p>
+            </div>
+            <div class="hotel-col">
+                <img src="images/premium_cat.png">
+                <div class="layer">
+                    <h3>PREMIUM SUITE</h3>
+                </div>
+                <p><strong>Price: </strong> $35/day</p>
+                <p><strong>Condition: </strong>A high-quality bed that is soft and spatial to sleep on.</p>
+            </div>
+            <div class="hotel-col">
+                <img src="images/shared_cat.png">
+                <div class="layer">
+                    <h3>SHARED DELUX SUITE</h3>
+                </div>
+                <p><strong>Price: </strong> $45/day</p>
+                <p><strong>Condition: </strong>A spatial and clean area that is equipped with multiple soft storeys as beds,
+                to be shared with other mates (no more than 4 mates).
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- Services info -->
+    <section class="info">
+        <h1>More details</h1>
+        <div class="row">
+            <div class="info-col">
+                <h3>Discounts for Membership</h3>
+                <p>5 times visiting BestMates: 5% off for the next visit.</p>
+                <p>10 times visiting BestMates: 10% off for the next visit.</p>
+                <p>Photos and Grooming and Spa package: $55</p>
+            </div>
+            <div class="info-col">
+                <h3>Important Notice</h3>
+                <p>Please notice that 5% fee will be applied for holiday visits.</p>
+                <p>Please do not forget to bring along the required documents declared 
+                    in the confirmation email when boarding (vaccination, other details you may want us to notice 
+                    about your mates, ...).
+                </p>
+            </div>
+            <div class="info-col">
+                <h3>Special services (per time)</h3>
+                <p>Photos (1 Album 15 Pictures): $15</p>
+                <p>Supervised Playing/Walking (dogs only) (30 mins): $20</p>
+                <p>Grooming and Spa: $45</p>
+                <p>One on One Playtime (20 mins): $20</p>
+                <p>Swimming (dogs only): $25</p>
+            </div>
+        </div>
+        <div class="info-col">
+            <h3>Daycare Option</h3>
+            <p>We also provide daycare services apart from hotel services: $15 for 2 hours</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="booking">
+        <div class="container">
+            <form action="" class="form">
+                <div class="input-group">
+                    <label for="check-in" class="input-label">Check-in</label>
+                    <input type = "date" class="input" id="check-in">
+                    <label for="check-out" class="input-label">Check-out</label>
+                    <input type = "date" class="input" id="check-out">
+                </div>
+                <div class="input-group">
+                    <label for="appt" class="input-label">From:</label>
+                    <input type="time" id="appt" name="appt">
+                    <label for="appt" class="input-label">To:</label>
+                    <input type="time" id="appt" name="appt">
+                </div>
+                <div class="input-group"> 
+                    <br><label class="input-label">Which pet mates do you make a booking for?</label><br>
+                    <input type="radio" id="pet1" name="pet" value="Dog">
+                    <label for="pet1"> Bella</label><br>
+                    <input type="radio" id="pet2" name="pet" value="Cat">
+                    <label for="pet2"> Lucy</label><br>
+                </div>
+                <label class="input-label">Suite Options</label>
+                <div class="input-group">
+                    <label for="dog" class="subtext-input-label">Dog</label>
+                    <select class="options" id="dogs">
+                        <option value="The Lodge">The Lodge</option>
+                        <option value="Premium Lodge">Premium Lodge</option>
+                        <option value="Shared Delux Lodge">Shared Delux Lodge</option>
+                        <option value="Daycares">Daycares</option>
+                        <option value="My mate is a cat">My mate is a cat</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="cat" class="subtext-input-label">Cat</label>
+                    <select class="options" id="cats">
+                        <option value="Tree-alike apartment">Tree-alike apartment</option>
+                        <option value="Premium Suite">Premium Suite</option>
+                        <option value="Shared Delux Suite">Shared Delux Suite</option>
+                        <option value="Daycares">Daycares</option>
+                        <option value="My mate is a dog">My mate is a dog</option>
+                    </select>
+        
+                <div class="input-group"> 
+                    <br><label class="input-label">Special services for your mates</label><br>
+                    <input type="checkbox" id="s1" name="s1" value="photos">
+                    <label for="s1"> Photos</label><br>
+                    <input type="checkbox" id="s2" name="s2" value="walking">
+                    <label for="s2"> Supervised Playing/Walking (dogs only) (30 mins)</label><br>
+                    <input type="checkbox" id="s3" name="s3" value="spa">
+                    <label for="s3"> Grooming and Spa</label><br>
+                    <input type="checkbox" id="s4" name="s4" value="brusing">
+                    <label for="s4"> Brushing (10 mins)</label><br>
+                    <input type="checkbox" id="s5" name="s5" value="playtime">
+                    <label for="s5"> One on One Playtime (20 mins)</label><br>
+                    <input type="checkbox" id="s6" name="s6" value="pool">
+                    <label for="s6"> Swimming (dogs only)</label><br>
+                </div>
+            </form>
+            <form action="file:///Users/gabriellachauhoang/Desktop/ISYS2110_Our_Pet_Hotel/paying.html">
+                <button class="btn form-btn btn-purple">Confirm
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+</script>
+</body>
+</html> 

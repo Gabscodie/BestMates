@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>BestMate - A world-class pet hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/d05b1652d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class = "header">
+    <nav>
+        <div class="logo">
+            <h1>BESTMATE</h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+            
+            <i class="fa-solid fa-x" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Help/FAQ</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">My Account</a></li>
+                </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick = "showMenu()"></i>
+    </nav>
+<div class ="text-box">
+    <h1>Welcome to BestMate.</h1>
+    <p>A world-class pet hotel offering state of the art services and facilities to your best mate.
+    </p>
+    <p><a href="file:///Users/gabriellachauhoang/Desktop/ISYS2110_Our_Pet_Hotel/booking.html" class="hero-btn">Book me in!</a></p>
+</div>
+</section>
+
+<section class="testimonials">
+    <h1>Testimonials</h1>
+    
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="images/testimonial_profile_1.png">
+            <div>
+                <p>Dougie P had major back surgery, he wears leg braces and socks and needs supervision when he plays. They're a great team always looking out for him and he loves his weekly visit!</p>
+                <h3>Charles</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="images/testimonial_profile_2.png">
+            <div>
+                <p>First time customer for our dog so we were a bit nervous but were very happy with the communication while we were away and our dog came out of it healthy and happy.</p>
+                <h3>Jess</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>    
+
+    
+<section class="cta">
+    <h1>Hope to see you soon!</h1>
+</section>
+    
+    
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+</script>
+</body>
+</html> 
+
+
