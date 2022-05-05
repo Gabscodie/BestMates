@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style_links.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/d05b1652d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class = "header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            
+            <i class="fa-solid fa-x" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">Help/FAQ</a></li>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="booking.html" class="hero-btn">Book Now!</a></li>
+                </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick = "showMenu()"></i>
+    </nav>
+</section>
+
+<div class="image">
+    <main>
+        <article class="background">
+            <header>
+                <h1>About us</h1>
+                <img src = "images/little_albion_dog.jpg" class = pet-hotel-image>
+                <p class = "about-text">We aim to provide the best care for your pets!</p>
+                <p class = "more-text"><br>We offer a range of luxurious rooms which you can choose from to suit you best! In addition, we have specialist facilities and food menus to make sure your pet has a great time.
+                    To top that off, we have dedicated, trained staff who have been with us for years.</p><br>
+
+                <h2>Team Information</h2>
+                    <p>
+                        <br>Yu Hong Chen <br> yche7615 <br> Prototype: login.html, register.html, account.html, combining
+                        <br> Report: Human Computer Interface Section <br>
+
+                    </p>
+
+                    <p>
+                        <br>Nguyen Yen Chau (Gabriella) Hoang <br> nhoa4413 <br> Prototype: booking.html, thanks.html, paying.html, gallery in index.html
+                        <br> Report: User Analysis Section <br>
+
+                    </p>
+
+                    <p>
+                        <br>Kevin Kong<br> kkon0188 <br> Prototype: about.html, contact.html, faq.html, policy/html
+                        <br> Report: Introduction, Non-functional Requirements<br>
+
+                    </p>
+
+                    <p>
+                        <br>Yu Hong Chen <br> yche7615 <br> Prototype: login.html, register.html, account.html, combining
+                        <br> Report: Human Computer Interface Section <br>
+
+                    </p>
+            </header>
+        </article>
+    </main>
+</div>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+</script>
+
+</body>
+</html>

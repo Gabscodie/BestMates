@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style_links.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/d05b1652d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class = "header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            
+            <i class="fa-solid fa-x" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">Help/FAQ</a></li>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="booking.html" class="hero-btn">Book Now!</a></li>
+                    
+                </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick = "showMenu()"></i>
+    </nav>
+</section>
+
+<div class="image">
+    <main>
+        <article class="background">
+            <header>
+                <h1>Privacy Policy</h1>
+                <h2>Privacy of Your Personal Information</h2>
+                <p><br>BestMate is the owner and publisher of the content contained in this website. This privacy policy applies to BestMate and its related entities.
+                    We respect your privacy and are committed to handling your personal information in accordance with the National Privacy Principles in the Privacy Act 1988 (Cth). This privacy policy explains how we manage your personal information we collect about you.</p>
+                <h2><br>Collection, Use and Disclosure</h2>
+                <p><br>We may collect your personal information directly from you or when you deal with us by telephone, letter or email; when you access and interact with our website; or from other sources. The information we collect may include your name, address, telephone number, email address and details relating to your pet/s and their care. 
+                    If you choose not to provide us with your personal information, we may not be able to contract with you or provide you with the information you may require.</p>
+            </header>
+        </article>
+    </main>
+</div>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+</script>
+
+</body>
+</html>

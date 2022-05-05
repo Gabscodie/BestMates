@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style_links.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/d05b1652d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class = "header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            
+            <i class="fa-solid fa-x" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">Help/FAQ</a></li>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="booking.html" class="hero-btn">Book Now!</a></li>
+                    
+                </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick = "showMenu()"></i>
+    </nav>
+</section>
+
+<div class="image">
+    <main>
+        <article class="background">
+            <header>
+                <h1>Contact</h1>
+            </header>
+            
+            <img src="images/pets.jpg" class="pet-image">
+            <section class = "text">
+                <p>123 Some Rd
+                <br>Some place NSW
+                <br>T: 12 3456 7890
+                <br>Email: contact@bestmate.com.au
+                <strong><br><br>By Appointment Only</strong>
+                <strong><br><br>Hours</strong>
+                <br>Monday - Friday: 7:30 am - 4:00 pm
+                <br>Saturday: 7:30 am - 4:00 pm
+                <br>Sunday/Public Holidays: Closed</p>
+            </section>
+        </article>
+    </main>
+</div>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+</script>
+
+</body>
+</html>

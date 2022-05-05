@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Website Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="yc-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d05b1652d2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class = "header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+
+                    <i class="fa-solid fa-x" onclick = "hideMenu()"></i>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="faq.html">Help/FAQ</a></li>
+                            <li><a href="policy.html">Privacy Policy</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="booking.html" class="hero-btn">Book Now!</a></li>
+                        </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick = "showMenu()"></i>
+            </nav>
+
+             <div class = "container">
+                <div class="card">
+                    <div class="card-front">
+                        <h1>Login</h1>
+                        <form>
+                            <input type="email" class="input-box" placeholder="Please Enter Your Email" required> <br>
+                            <input type="password" class="input-box" placeholder="Please Enter Your Password" required><br>
+                            <a href="account.html">
+                                <input type="button" class="login-btn" value="Login">
+                            </a> <br>
+                            <input id="rmb" name="rmb" type="checkbox" class="rmbme"> <span>Remember Me</span> <br>
+                            <a href="register.html">Don't have an account?</a> <br>
+                            <a href="">Forgot My Password</a>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+
+            }
+        </script>
+
+    </body>
+</html> 
+
+

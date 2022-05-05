@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>University Website Design - Easy Tutorials</title>
+    <title>BestMate - A world-class pet hotel</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,17 +12,18 @@
 <body>
 <section class = "header">
     <nav>
-        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="logo">
+            <h1>BESTMATE</h1>
+        </div>
         <div class="nav-links" id="navLinks">
             
             <i class="fa-solid fa-x" onclick = "hideMenu()"></i>
                 <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="faq.html">Help/FAQ</a></li>
-                    <li><a href="policy.html">Privacy Policy</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="booking.html" class="hero-btn">Book Now!</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Help/FAQ</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">My Account</a></li>
                 </ul>
         </div>
         <i class="fa-solid fa-bars" onclick = "showMenu()"></i>
@@ -31,16 +32,13 @@
     <h1>Welcome to BestMate.</h1>
     <p>A world-class pet hotel offering state of the art services and facilities to your best mate.
     </p>
-    <a href="booking.html" class="hero-btn">Book me in!</a>
+    <p><a href="file:///Users/gabriellachauhoang/Desktop/ISYS2110_Our_Pet_Hotel/booking.html" class="hero-btn">Book me in!</a></p>
 </div>
-    
 </section>
-
-    
 
 <section class="testimonials">
     <h1>Testimonials</h1>
-
+    
     <div class="row">
         <div class="testimonials-col">
             <img src="images/testimonial_profile_1.png">
@@ -67,50 +65,25 @@
             </div>
         </div>
     </div>
-</section>
+</section>    
 
-<section class="hotel">
-    <h1>Gallery</h1>
-    <div class="row">
-        <div class="hotel-col">
-            <img src="images/groom.jpg">
-            <div class="layer">
-                <h3>Enjoy the spa!</h3>
-            </div>
-        </div>
-        <div class="hotel-col">
-            <img src="images/play.png">
-            <div class="layer">
-                <h3>Bella has a great time with us!</h3>
-            </div>
-        </div>
-        <div class="hotel-col">
-            <img src="images/swimming.jpg
-">
-            <div class="layer">
-                <h3>Lucy does enjoy swimming</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
+    
 <section class="cta">
     <h1>Hope to see you soon!</h1>
 </section>
-
-
+    
+    
 <script>
     var navLinks = document.getElementById("navLinks");
     function showMenu(){
         navLinks.style.right = "0";
-
+        
     }
     function hideMenu(){
         navLinks.style.right = "-200px";
-
+        
     }
 </script>
-
 </body>
 </html> 
 
